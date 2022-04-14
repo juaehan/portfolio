@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../firstclone/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../firstclone/css/index.css" />
+    <title>W3.CSS Template</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Gourmet au Catering</h1>
+            <ul class="menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="main">
+                <span>Le Catering</span>
+            </div>
+            <div class="about">
+                <div class="img"></div>
+                <div class="text">
+                    <h3>About Catering</h3>
+                    <h4>Tradition since 1889</h4>
+                    <p>The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</p>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="menu clear">
+                <div class="text">
+                    <h3>Our Menu</h3>
+
+                    <p>Bread Basket</p>
+                    <span>Assortment of fresh baked fruit breads and muffins 5.50</span>
+                    
+                    <p>Honey Almond Granola with Fruits</p>
+                    <span>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</span>
+
+                    <p>Belgian Waffle</p>
+                    <span>Vanilla flavored batter with malted flour 7.50</span>
+
+                    <p>Scrambled eggs</p>
+                    <span>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</span>
+
+                    <p>Blueberry Pancakes</p>
+                    <span>With syrup, butter and lots of berries 8.50</span>
+                </div>
+                <div class="img"></div>
+            </div>
+            <div class="contact clear">
+                <h3>contact</h3>
+                <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+                <p>Catering Service, 42nd Living St, 43043 New York, NY</p>
+                <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+                <form name="form1">
+                    <fieldset>
+                        <div>
+                            <input type="text" name="user_name" id="user_name" placeholder="Name" required="required">
+                        </div>
+                        <div>
+                            <input type="number" name="user_num" id="user_num" placeholder="How many people" required="required">
+                        </div>
+                        <div>
+                            <input type="date" name="user_date" id="user_date" placeholder="datetime-local" required="required">
+                        </div>
+                        <div>
+                            <input type="text" name="user_message" id="user_message" placeholder="Message \ Special requirements" required="required">
+                        </div>
+                        <div>
+                            <button type="submit">SEND MESSAGE</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Powerd by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+        </div>
+    </div>
+
+    <!-- 공지사항 알림 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.min.js"></script>
+    <script src="./js/notice.js"></script>
+    <script>
+        // Notice.init('본인이름', 'pdf파일경로');
+        Notice.init('한주애', './22.03.15_한주애.pdf');
+    </script>
+</body>
+</html>
