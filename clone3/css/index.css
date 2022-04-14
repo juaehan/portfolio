@@ -1,0 +1,299 @@
+@charset "utf-8";
+
+.clear{
+    display:block;
+    content: '';
+    clear: both;
+    float:none;
+}
+
+header{
+    width:100%;
+    height:70px;
+    background-color:rgb(255, 255, 255);
+    position:fixed;
+    z-index: 99999;
+}
+header nav{
+    width:50px;
+    height:50px;
+    margin:10px 140px;
+    position:relative;
+}
+header nav span{
+    width:30px;
+    height:2px;
+    background-color:black;
+    display:block;
+    position:absolute;
+    left:10px;
+    top:24px;
+}
+header nav span:first-child{
+    top:13px;
+    height:2px;
+}
+header nav span:last-child{
+    top:37px;
+    height:2px;
+}
+header h1{
+    font-family: 'Bitter', serif;
+    font-size:25px;
+    position:absolute;
+    left:700px;
+    top:25px;
+}
+header span{
+    font-family: 'Bitter', serif;
+    font-size:25px;
+    position:absolute;
+    right:140px;
+    top:25px;
+}
+
+main{
+    padding:0 150px;
+    position:relative;
+    top:70px;
+}
+main #food{
+    padding-top:50px;
+    border-bottom: 1px solid #ddd;
+}
+main #food .box1{
+    padding:0 20px;
+}
+main #food .box1 .con1,
+main #food .box1 .con2,
+main #food .box1 .con3,
+main #food .box1 .con4{
+    float:left;
+    width:25%;
+    height:600px;
+}
+main #food .box1 .con1 img,
+main #food .box1 .con2 img,
+main #food .box1 .con3 img,
+main #food .box1 .con4 img{
+    width:100%;
+    height:400px;
+    object-fit: contain;
+}
+main #food .box1 .con1 h3,
+main #food .box1 .con2 h3,
+main #food .box1 .con3 h3,
+main #food .box1 .con4 h3{
+    text-align: center;
+    font-size:20px;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    line-height:1.5;
+    padding:15px 13px;
+}
+main #food .box1 .con1 p,
+main #food .box1 .con2 p,
+main #food .box1 .con3 p,
+main #food .box1 .con4 p{
+    text-align: center;
+    font-size:15px;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    line-height:1.5;
+    padding:0 13px 15px;
+}
+main #food .box1 .con3 span{
+    display:block;
+    text-align: center;
+    font-size:15px;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    line-height:1.5;
+    padding:0 13px 15px;
+}
+
+
+
+
+main #food .box2{
+    padding:0 20px;
+}
+main #food .box2 .con1,
+main #food .box2 .con2,
+main #food .box2 .con3,
+main #food .box2 .con4{
+    float:left;
+    width:25%;
+    height:600px;
+}
+main #food .box2 .con1 img,
+main #food .box2 .con2 img,
+main #food .box2 .con3 img,
+main #food .box2 .con4 img{
+    width:100%;
+    height:400px;
+    object-fit: contain;
+}
+main #food .box2 .con1 h3,
+main #food .box2 .con2 h3,
+main #food .box2 .con3 h3,
+main #food .box2 .con4 h3{
+    text-align: center;
+    font-size:20px;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    line-height:1.5;
+    padding:15px 13px;
+}
+main #food .box2 .con1 p,
+main #food .box2 .con2 p,
+main #food .box2 .con3 p,
+main #food .box2 .con4 p{
+    text-align: center;
+    font-size:15px;
+    font-family: 'Bitter', serif;
+    font-weight: 400;
+    line-height:1.5;
+    padding:0 13px 15px;
+}
+
+
+main #food .page{
+    margin:0 auto 50px;
+    text-align: center;
+    width:300px;
+    height:40px;
+}
+main #food .page a{
+    font-family: 'Bitter', serif;
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background-color:white;
+    line-height:30px;
+    text-decoration: none;
+    color:black;
+}
+main #food .page a:hover{
+    background-color:black;
+    color:white;
+}
+
+main #about{
+    padding-top:50px;
+    border-bottom: 1px solid #ddd;
+}
+main #about h3{
+    font-family: 'Bitter', serif;
+    font-size:25px;
+    text-align: center;
+    margin-bottom:30px;
+}
+main #about img{
+    width:900px;
+    height:550px;
+    padding:0 150px;
+    object-fit: contain;
+    margin-bottom:40px;
+}
+main #about h4{
+    font-family: 'Bitter', serif;
+    font-size:20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom:30px;
+}
+main #about h5{
+    font-family: 'Bitter', serif;
+    font-size:18px;
+    text-align: center;
+    margin-bottom:30px;
+    font-style: italic;
+}
+main #about p{
+    font-family: 'Bitter', serif;
+    font-size:17px;
+    line-height:1.5;
+    text-align: center;
+    margin-bottom:100px;
+}
+
+footer{
+    padding:80px 150px;
+    position:relative;
+    top:70px;
+}
+footer .left{
+    float:left;
+    width:33.333%;
+    padding:0 10px;
+}
+footer .left h3,
+footer .center h3,
+footer .right h3{
+    font-family: 'Bitter', serif;
+    font-size:25px;
+    padding-bottom:25px;
+}
+footer .left p{
+    font-family: 'Bitter', serif;
+    line-height:1.5;
+    padding-bottom:20px;
+}
+footer .left span{
+    font-family: 'Bitter', serif;
+}
+footer .left a{
+    display:inline-block;
+    color:black;
+    text-decoration: none;
+}
+
+footer .center{
+    float:left;
+    width:30%;
+    padding-right:10px;
+}
+footer .center ul{}
+footer .center ul li{
+    padding:15px 0 15px 10px;
+    height:30px;
+}
+footer .center ul li:first-child{
+    border-bottom:1px solid #ddd;
+}
+footer .center ul li img{
+    width:40px;
+    height:35px;
+    object-fit: contain;
+    padding-right:10px;
+    float:left;
+}
+footer .center ul li p:nth-child(2){
+    float:none;
+}
+footer .center ul li p{
+    float:left;
+    font-family: 'Bitter', serif;
+}
+
+footer .right{
+    float:left;
+    width:33.333%;
+}
+footer .right p{
+    font-family: 'Bitter', serif;
+}
+footer .right p span:first-child{
+    background-color:black;
+}
+footer .right p span{
+    display:inline-block;
+    text-align: center;
+    width:75px;
+    height:28px;
+    line-height:28px;
+    background-color:rgb(100, 100, 100);
+    color:white;
+    margin:0 5px 15px 0;
+}

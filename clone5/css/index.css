@@ -1,0 +1,514 @@
+@charset "utf-8";
+.clear{
+    content: '';
+    clear: both;
+    display: block;
+    float:none;
+}
+
+header{
+    width:300px;
+    height:100%;
+    background-color:white;
+    position:fixed;
+    float: left;
+    font-family: 'Dosis', sans-serif;
+}
+header .profile{
+    margin:25px 0 0 15px;
+    background:url(../img/avatar_g2.jpg) no-repeat;
+    background-size:contain;
+    width:120px;
+    height:120px;
+    border-radius: 5px;
+}
+header h3{
+    font-size:25px;
+    font-weight:600;
+    margin:30px 0 30px 15px;
+}
+header p{
+    font-size:18px;
+    margin-bottom:30px;
+    margin:0 0 30px 15px;
+}
+header nav{
+    width:300px;
+    font-size:18px;
+    margin-bottom:30px;
+}
+header nav ul li{
+    width:300px;
+    height:40px;
+    padding-left:15px;
+}
+header nav ul li:hover{
+    background-color:rgb(170, 170, 170);
+}
+header nav ul li a{
+    display:block;
+    color:black;
+    text-decoration: none;
+    line-height:40px;
+}
+header nav ul li:first-child a{
+    color:teal;
+}
+header nav ul li a i{
+    margin-right:20px;
+}
+header .sns{
+    padding-left:15px;
+    font-size:18px;
+}
+
+main{
+    margin-left:300px;
+    background-color:rgb(236, 236, 236);
+    font-family: 'Dosis', sans-serif;
+}
+main h1{
+    font-size:40px;
+    font-weight: 600;
+    padding:20px 0 30px 15px;
+}
+main .filter{
+    padding:15px;
+    font-size:18px;
+}
+main .filter span{
+    margin-right:20px;
+}
+main .filter a{
+    display: inline-block;
+    width:100px;
+    height:40px;
+    background-color:white;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    line-height:40px;
+}
+main .filter a:nth-of-type(1){
+    background-color:black;
+    color:white;
+    width:60px;
+}
+main .filter a:nth-of-type(4){
+    width:70px;
+}
+main .filter a:hover{
+    background-color:gray;
+}
+main .filter a i{margin-right:15px;}
+main .line{
+    height:4px;
+    background-color:rgb(168, 168, 168);
+    margin:15px 15px 30px 15px;
+}
+
+
+main #photo{
+    margin:0 15px 50px 15px;
+}
+main #photo .box1{
+    width:100%;
+    height:400px;
+}
+main #photo .box1 .con{
+    float:left;
+    width:386px;
+    height:400px;
+    margin:0 15px 15px 0;
+    background-color:white;
+    font-size:18px;
+}
+main #photo .box1 .con:last-of-type{
+    margin:0 0 15px 0;
+}
+main #photo .box1 .con img{
+    width:100%;
+    height:250px;
+}
+main #photo .box1 .con p{
+    padding:15px 0 20px 10px;
+    font-weight:600;
+}
+main #photo .box1 .con span{
+    padding:0 10px 0 10px;
+    display:inline-block;
+    line-height:1.5;
+    font-size:16px;
+}
+
+
+main #photo .box2{
+    width:100%;
+    height:400px;
+}
+main #photo .box2 .con{
+    float:left;
+    width:386px;
+    height:400px;
+    margin:0 15px 15px 0;
+    background-color:white;
+    font-size:18px;
+}
+main #photo .box2 .con:last-of-type{
+    margin:0 0 15px 0;
+}
+main #photo .box2 .con img{
+    width:100%;
+    height:250px;
+}
+main #photo .box2 .con p{
+    padding:15px 0 20px 10px;
+    font-weight:600;
+}
+main #photo .box2 .con span{
+    padding:0 10px 0 10px;
+    display:inline-block;
+    line-height:1.5;
+    font-size:16px;
+}
+
+
+main #photo .page{
+    width:290px;
+    height:45px;
+    margin: 50px auto;
+}
+main #photo .page a{
+    display:inline-block;
+    width:45px;
+    height:45px;
+    text-align: center;
+    color:black;
+    line-height:45px;
+    text-decoration: none;
+}
+main #photo .page a:hover{
+    background-color:black;
+    color:white;
+}
+main #photo .page a:nth-of-type(2){
+    background-color:black;
+    color:white;
+}
+
+
+main #about{
+    padding:0 15px;
+}
+main #about img{
+    width: 593px;
+    height:350px;
+    padding-right:15px;
+}
+main #about img:last-of-type{
+    padding-right:0;
+}
+main #about h2{
+    margin:30px 0 30px 10px;
+    font-size:30px;
+    font-weight:600;
+}
+main #about p{
+    padding-left:10px;
+    font-size:18px;
+    line-height:1.3;
+    font-weight:300;
+    margin-bottom:50px;
+}
+main #about .skills{
+    padding:0 10px;
+}
+main #about .skills h3{
+    font-size:25px;
+    font-weight:400;
+    margin-bottom:30px;
+}
+main #about .skills p{
+    padding-left:0;
+    margin-bottom:15px;
+}
+main #about .skills .bar_p,
+main #about .skills .bar_d,
+main #about .skills .bar_s{
+    width:100%;
+    height:40px;
+    background-color:gray;
+    margin-bottom:15px;
+}
+main #about .skills .bar_p .fill,
+main #about .skills .bar_d .fill,
+main #about .skills .bar_s .fill{
+    width:95%;
+    height:100%;
+    text-align: center;
+    line-height:40px;
+    background-color:rgb(87, 87, 87);
+    color:white;
+}
+main #about .skills .bar_d .fill{
+    width:85%;
+}
+main #about .skills .bar_s .fill{
+    width:80%;
+}
+main #about .skills .download{
+    height:40px;
+    width:250px;
+    background-color:rgb(87, 87, 87);
+    margin:30px 0 80px 0;
+    font-size:17px;
+    color:white;
+    font-weight: 300;
+    text-align: center;
+    line-height:40px;
+}
+main #about .skills .download i{
+    padding-right:20px;
+}
+main #about .skills .download:hover{
+    background-color:rgb(161, 161, 161);
+    color:black;
+    cursor:pointer;
+}
+
+
+main #about .charge{
+    padding:0 10px;
+    height:555px;
+    margin-bottom:80px;
+}
+main #about .charge h3{
+    font-size:25px;
+    font-weight:300;
+    padding-bottom:20px;
+}
+main #about .charge .basic,
+main #about .charge .pro,
+main #about .charge .premium{
+    float:left;
+    width:376px;
+    margin:0 15px 0 0;
+}
+main #about .charge .premium{
+    margin:0;
+}
+main #about .charge .basic ul li,
+main #about .charge .pro ul li,
+main #about .charge .premium ul li{
+    width:100%;
+    height:60px;
+    border:1px solid #ddd;
+    background-color:white;
+    font-size:18px;
+    font-weight:300;
+    text-align: center;
+    padding:20px 0;
+}
+main #about .charge .basic ul li:first-of-type,
+main #about .charge .pro ul li:first-of-type,
+main #about .charge .premium ul li:first-of-type{
+    height:90px;
+    padding:30px 0;
+    font-size:25px;
+    font-weight: 400;
+    color:white;
+    background-color:rgb(87, 87, 87);
+}
+main #about .charge .pro ul li:first-of-type{
+    background-color:rgb(0, 209, 209);
+}
+
+main #about .charge .basic ul li:nth-of-type(6),
+main #about .charge .pro ul li:nth-of-type(6),
+main #about .charge .premium ul li:nth-of-type(6){
+    height:100px;
+    line-height:0;
+}
+main #about .charge .basic ul li:nth-of-type(7),
+main #about .charge .pro ul li:nth-of-type(7),
+main #about .charge .premium ul li:nth-of-type(7){
+    height:80px;
+    padding:20px 0;
+    background-color:transparent;
+}
+main #about .charge .basic ul li h3,
+main #about .charge .pro ul li h3,
+main #about .charge .premium ul li h3{
+    padding-bottom:30px;
+    padding-top:15px;
+    font-weight:400;
+}
+main #about .charge .basic ul li a,
+main #about .charge .pro ul li a,
+main #about .charge .premium ul li a{
+    display:block;
+    color:white;
+    text-decoration: none;
+    background-color:rgb(0, 202, 202);
+    width:80px;
+    height:40px;
+    font-weight: 400;
+    margin:0 auto;
+    line-height:40px;
+}
+
+
+main #contact{
+    background-color:gray;
+    padding:30px 10px;
+}
+main #contact h2{
+    margin: 0 0px 30px 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+main #contact .qna{
+    padding:0 5px;
+    width:100%;
+    height:100px;
+    margin-bottom:50px;
+}
+main #contact .qna .message,
+main #contact .qna .map,
+main #contact .qna .call{
+    float:left;
+    width:396px;
+    height:100px;
+    background-color:rgb(70, 70, 70);
+    text-align: center;
+    color:white;
+    padding:20px 0;
+}
+main #contact .qna .map{
+    background-color:rgb(0, 209, 209);
+}
+main #contact .qna .message i,
+main #contact .qna .map i,
+main #contact .qna .call i{
+    font-size:30px;
+    padding-bottom:10px;
+}
+main #contact .qna .message i p,
+main #contact .qna .map i p,
+main #contact .qna .call i p{
+    font-weight:300;
+}
+main #contact .line{
+    height:1px;
+    background-color:white;
+}
+main #contact .input{
+    padding:0 15px;
+}
+main #contact .input p{
+    font-size:18px;
+    font-weight: 300;
+}
+main #contact .input input{
+    width:100%;
+    height:30px;
+    margin-bottom:15px;
+}
+main #contact .send{
+    margin:0 15px;
+    width:180px;
+    height:40px;
+    background-color:black;
+    color:white;
+    text-align: center;
+    line-height:40px;
+}
+main #contact .send i{
+    padding-right:15px;
+}
+
+footer{
+    margin-left:300px;
+    height:315px;
+    background-color:rgb(63, 63, 63);
+    font-family: 'Dosis', sans-serif;
+    padding:50px 30px;
+    color:white;
+}
+footer .left,
+footer .center,
+footer .right{
+    float:left;
+    width:386px;
+}
+footer .left h3,
+footer .center h3,
+footer .right h3{
+    font-size:25px;
+    padding-bottom:20px;
+}
+footer .left p{
+    width:376px;
+    line-height:1.2;
+    padding-bottom:20px;
+}
+footer .left p a{color:white;}
+
+footer .center ul{}
+footer .center ul li{
+    width:100%;
+    height:100px;
+    padding:20px;
+}
+footer .center ul li:first-child{
+    border-bottom:1px solid white;
+}
+footer .center ul li img{
+    width:50px;
+    height:50px;
+    float:left;
+    margin-right:20px;
+}
+footer .center ul li span{
+    display:block;
+    font-size:20px;
+    line-height:1.2;
+}
+footer .center ul li span:last-of-type{
+    font-size:18px;
+    font-weight:300;
+}
+footer .right p{
+    width:100%;
+}
+footer .right p span{
+    display: inline-block;
+    width:70px;
+    height:20px;
+    line-height:20px;
+    background-color:gray;
+    text-align: center;
+    margin-bottom:10px;
+    color:black;
+}
+footer .right p span:first-of-type{
+    background-color:black;
+    color:white;
+}
+
+.footer{
+    background-color:black;
+    margin-left:300px;
+    text-align: center;
+    color:white;
+    height:100px;
+    line-height:100px;
+    font-size:18px;
+    font-family: 'Dosis', sans-serif;
+}
+.footer p a{
+    display:inline-block;
+    color:white;
+}

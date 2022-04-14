@@ -1,0 +1,678 @@
+.off{display:none;}
+.on{display:block;}
+.container{
+    width:100%;
+    font-family: 'Nanum Gothic', sans-serif;;
+}
+.container header{
+    width:100%;
+    height:80px;
+    background:rgb(244, 244, 244);
+    padding:0 150px;
+}
+header h1{
+    width:150px;
+    height:40px;
+    float:left;
+    padding-top:20px;
+}
+header h1 a{width:150px;height:40px;display:block;}
+header h1 a img{
+    width:150px;
+    height:40px;
+    object-fit: contain;
+}
+header .nav{
+    float:left;
+    width:650px;
+    height:80px;
+    margin:0 60px 0 100px;
+    font-size:16px;
+    font-weight: 800;
+}
+header .nav>li{
+    list-style: none;
+    float:left;
+    width:110px;
+    margin-right:20px;
+    text-align: center;
+    margin-top:30px;
+}
+header .nav > li:hover a{
+    color:rgba(0,44,95);
+}
+header .nav li:last-child{
+    margin-right:0;
+}
+header .nav > li a{
+    display: inline-block;
+    color:rgb(86, 86, 86);
+    text-decoration: none;
+}
+header .nav li .sub{
+    position: absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    height:70px;
+    background:rgb(244, 244, 244);
+    border-top:2px solid rgb(195, 195, 195);
+    border-bottom:2px solid rgb(195, 195, 195);
+    padding:25px 155px;
+    display:none;
+}
+header .nav li .sub li{
+    float:left;
+    text-align: center;
+    padding-right:117px;
+}
+header .nav li .sub li:first-of-type{
+    padding-left:105px;
+}
+header .nav li .sub li:last-of-type{
+    padding-right:0;
+}
+header .nav li .sub li:nth-child(5) a::after,
+header .nav li .sub li:nth-child(6) a::after{
+    content: "";
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background:url(../img/ico_link.png) no-repeat 0 0;
+    margin-left:10px;
+}
+header .right{
+    width:259px;
+    height:80px;
+    float:right;
+}
+header .right > li{
+    width:20px;
+    height:20px;
+    float:left;
+    margin-right:20px;
+    margin-top:30px;
+}
+header .right li:last-child{
+    width:139px;
+    margin-right:0;
+    position:relative;
+    text-align: center;
+}
+header .right > li a{
+    width:20px;
+    height:20px;
+}
+header .right > li:last-child > a{
+    width:139px;
+    color:rgb(86, 86, 86);
+    font-weight: 800;
+    font-size:18px;
+    text-decoration: none;
+    text-align: center;
+}
+header .right > li:last-child:hover > a{
+    color:rgba(0,44,95);
+}
+header .right li a img{
+    width:20px;
+    height:20px;
+    object-fit: contain;
+}
+header .right_sub{
+    width:139px;
+    height:90px;
+    background:rgb(244, 244, 244);
+    position:absolute;
+    top:50px;
+    display:none;
+}
+header .right_sub li{
+    width:139px;
+    margin-right:0;
+    text-align: center;
+    margin-top:15px;
+    font-weight:400;
+}
+header .right_sub li a{
+    display:block;
+    text-decoration: none;
+    width:139px;
+    color:rgb(86, 86, 86);
+}
+header .right_sub li:last-child a{
+    color:rgba(0,44,95);
+    font-weight: 800;
+}
+header .right li:last-child .language_box{
+    width:20px;
+    height:20px;
+    background:url(../img/btn_language_more.png) no-repeat;
+    position:absolute;
+    right:0;
+    top:-1px;
+}
+
+
+
+
+
+
+
+
+/** section1 */
+section{padding:0 150px;}
+article .top{
+    width:100%;
+    height:20px;
+    padding:0 50px;
+    margin:50px 0 100px 0;
+}
+article .top .tag{
+    width:100%;
+    height:100%;
+    font-size:15px;
+}
+article .top .tag li{
+    float:left;
+    margin:0 10px;
+}
+article .top .tag li a::after{
+    content:'|';
+    margin-left:15px;
+    font-size:12px;
+}
+article .top .tag li a{
+    display: block;
+    text-decoration: none;
+    color:rgb(143, 143, 143);
+}
+article .top .tag li:hover a{
+    color:skyblue;
+}
+
+article span{
+    display:block;
+    font-size:16px;
+    font-weight: 700;
+    margin-bottom:10px;
+    color:rgba(0,44,95);
+}
+article h2{
+    font-size:40px;
+    font-weight: 800;
+    margin-bottom:20px;
+}
+article .img_box{
+    width:100%;
+    height:390px;
+    margin-bottom:80px;
+}
+article .img_box .img1{
+    float:left;
+    margin-right:40px;
+    width:770px;
+    height:390px;
+}
+article .img_box .img1 img{
+    object-fit: cover;
+    width:770px;
+    height:390px;
+}
+article .img_box .t_img_box{
+    width:409px;
+    height:390px;
+    float:left;
+    position:relative;
+}
+article .img_box .t_img_box .text{
+    position:absolute;
+    top:0;
+    left:0;
+    padding:10px;
+}
+article .img_box .t_img_box .text span{
+    font-size:13px;
+    font-weight: 800;
+    color:white;
+}
+article .img_box .t_img_box .text h3{
+    font-size:23px;
+    color:white;
+    font-weight: 800;
+    margin-top:8px;
+}
+article .img_box .t_img_box .img2 a img{
+    width:409px;
+    height:390px;
+    object-fit: cover;
+}
+
+
+
+
+/** main */
+article .box1{width:100%; height:530px;margin-bottom:40px;}
+article .box1 .l{width:475px; height:500px;float:left;margin-right:40px;}
+article .box1 .l .l_img{
+    display:block;
+    background:url(../img/05-n-drive-high-performance-pc-448.jpg) no-repeat 0 0;
+    background-size:cover;
+    width:475px;
+    height:400px;
+}
+article .box1 .l .box_text{
+    width:475px;
+    height:130px;
+    padding:10px 0;
+    line-height:1.2;
+}
+article .box1 .l .box_text span,
+article .box1 .m .box_text span,
+article .box1 .s .box_text span{
+    display:block;
+    font-size:12px;
+    font-weight: 800;
+    color:rgba(0,44,95);
+    margin-bottom:8px;
+}
+article .box1 .l .box_text p,
+article .box1 .m .box_text p,
+article .box1 .s .box_text p{
+    font-size:18px;
+    font-weight:800;
+}
+article .box1 .m{width:379px; height:400px;float:left;margin-right:40px;}
+article .box1 .m .m_img{
+    display:block;
+    background:url(../img/86-brand-tucson-asmr-pc-352x400.jpg) no-repeat 0 0;
+    background-size:cover;
+    width:379px;
+    height:400px;
+}
+article .box1 .m .box_text{
+    width:379px;
+    height:130px;
+    padding:10px 0;
+    line-height:1.2;
+}
+
+article .box1 .s{width:285px; height:400px;float:left;}
+article .box1 .s .s_img{
+    display:block;
+    background:url(../img/10-chasing-stars-pc-256.jpg) no-repeat 0 0;
+    background-size:cover;
+    width:285px;
+    height:400px;
+}
+article .box1 .s .box_text{
+    width:285px;
+    height:130px;
+    padding:10px 0;
+    line-height:1.2;
+}
+
+
+
+
+article .box2{width:100%; height:530px;margin-bottom:40px;}
+article .box2 .l{width:475px; height:500px;float:left;margin-right:40px;}
+article .box2 .l .l_img{
+    display:block;
+    background:url(../img/85-brand-ces-2022-pc-448.jpg) no-repeat 0 0;
+    background-size:cover;
+    width:475px;
+    height:400px;
+}
+article .box2 .l .box_text{
+    width:475px;
+    height:130px;
+    padding:10px 0;
+    line-height:1.2;
+}
+article .box2 .l .box_text span,
+article .box2 .m .box_text span,
+article .box2 .s .box_text span{
+    display:block;
+    font-size:12px;
+    font-weight: 800;
+    color:rgba(0,44,95);
+    margin-bottom:8px;
+}
+article .box2 .l .box_text p,
+article .box2 .m .box_text p,
+article .box2 .s .box_text p{
+    font-size:18px;
+    font-weight:800;
+}
+article .box2 .m{width:379px; height:400px;float:left;}
+article .box2 .m .m_img{
+    display:block;
+    background:url(../img/08-ioniq-david-de-rothschild-part4-pc-352x400.jpg) no-repeat 0 0;
+    background-size:cover;
+    width:379px;
+    height:400px;
+}
+article .box2 .m .box_text{
+    width:379px;
+    height:130px;
+    padding:10px 0;
+    line-height:1.2;
+}
+article .box2 .s{width:285px; height:400px;float:left;margin-right:40px;}
+article .box2 .s .s_img{
+    display:block;
+    background:url(../img/09-ioniq-forest-pc-256.jpg) no-repeat 0 0;
+    background-size:cover;
+    width:285px;
+    height:400px;
+}
+article .box2 .s .box_text{
+    width:285px;
+    height:130px;
+    padding:10px 0;
+    line-height:1.2;
+}
+
+
+
+
+article .box3{width:100%; height:530px;margin-bottom:40px;}
+article .box3 .m .box_text span{
+    display:block;
+    font-size:12px;
+    font-weight: 800;
+    color:rgba(0,44,95);
+    margin-bottom:8px;
+}
+article .box3 .m .box_text p{
+    font-size:18px;
+    font-weight:800;
+}
+article .box3 .m{width:379px; height:400px;float:left;margin-right:40px;}
+article .box3 .m:last-child{
+    margin-right:0;
+}
+article .box3 .m:last-of-type .m_img{
+    background-image:url(../img/05-ioniq-david-de-rothschild-part1-pc-352x400.jpg);
+}
+article .box3 .m:nth-of-type(2) .m_img{
+    background-image: url(../img/06-ioniq-david-de-rothschild-part2-pc-352x400.jpg);
+}
+article .box3 .m .m_img{
+    display:block;
+    background:url(../img/07-ioniq-david-de-rothschild-part3-pc-352x400.jpg) no-repeat 0 0;
+    background-size:cover;
+    width:379px;
+    height:400px;
+}
+article .box3 .m .box_text{
+    width:379px;
+    height:130px;
+    padding:10px 0;
+    line-height:1.2;
+}
+
+
+
+
+article .box4{width:100%; height:530px;margin-bottom:100px;}
+article .box4 .l{width:475px; height:500px;float:left;margin-right:40px;}
+article .box4 .l .l_img{
+    display:block;
+    background:url(../img/84-brand-heritage-grandeur-pc-448.jpg) no-repeat 0 0;
+    background-size:cover;
+    width:475px;
+    height:400px;
+}
+article .box4 .l .box_text{
+    width:475px;
+    height:130px;
+    padding:10px 0;
+    line-height:1.2;
+}
+article .box4 .l .box_text span,
+article .box4 .m .box_text span,
+article .box4 .s .box_text span{
+    display:block;
+    font-size:12px;
+    font-weight: 800;
+    color:rgba(0,44,95);
+    margin-bottom:8px;
+}
+article .box4 .l .box_text p,
+article .box4 .m .box_text p,
+article .box4 .s .box_text p{
+    font-size:18px;
+    font-weight:800;
+}
+
+article .box4 .m{width:379px; height:400px;float:left;margin-right:40px;}
+article .box4 .m .m_img{
+    display:block;
+    background:url(../img/83-brand-ev-literacy-part-three-pc-352x400.jpg) no-repeat 0 0;
+    background-size:cover;
+    width:379px;
+    height:400px;
+}
+article .box4 .m .box_text{
+    width:379px;
+    height:130px;
+    padding:10px 0;
+    line-height:1.2;
+}
+
+article .box4 .s{width:285px; height:400px;float:left;}
+article .box4 .s .s_img{
+    display:block;
+    background:url(../img/04-ioniq-seven-pc-256.jpg) no-repeat 0 0;
+    background-size:cover;
+    width:285px;
+    height:400px;
+}
+article .box4 .s .box_text{
+    width:285px;
+    height:130px;
+    padding:10px 0;
+    line-height:1.2;
+}
+
+
+/*** section2 *****/
+section:nth-child(2){
+    padding:0;
+}
+section .wrap{
+    padding:102px 260px;
+    width:100%;
+    height:500px;
+    background-color:rgba(0,44,95);
+    margin-bottom:80px;
+}
+section .wrap .imgbox{
+    width:544px;
+    height:295px;
+    float:left;
+    background:url(../img/main-hyundai-in-your-country-pc.jpg) no-repeat;
+    margin-right:40px;
+}
+section .wrap .text_button{
+    width:300px;
+    height:295px;
+    padding:33px 0;
+    float:left;
+}
+section .wrap .text_button h3{
+    font-size:40px;
+    color:white;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom:20px;
+}
+section .wrap .text_button p{
+    font-size:16px;
+    color:white;
+    font-weight: 700;
+    line-height:1.5;
+    margin-bottom:30px;
+}
+section .wrap .text_button a{
+    display:block;
+    width:140px;
+    height:35px;
+    background-color:gray;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    line-height: 35px;
+    font-size:16px;
+    font-weight:700;
+}
+
+
+/*** section3 ******/
+article .media_box1,
+article .media_box2{
+    width:100%;
+    height:352px;
+    margin-bottom:40px;
+}
+article .media_box2{
+    margin-bottom:100px;
+}
+article .media_box1 a,
+article .media_box2 a{
+    display:block;
+    float:left;
+    width:379px;
+    height:352px;
+    margin-right:40px;
+    position:relative;
+}
+article .media_box1 a:last-child,
+article .media_box2 a:last-child{
+    margin-right:0;
+}
+article .media_box1 a .img,
+article .media_box2 a .img{
+    width:379px;
+    height:352px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+article .media_box1 a:nth-child(1) .img{
+    background-image:url(../img/worldwide-main-instagram-01-8iihs-220315.jpg);
+}
+article .media_box1 a:nth-child(2) .img{
+    background-image: url(../img/worldwide-main-instagram-02-womens-day-220315.jpg);
+}
+article .media_box1 a:nth-child(3) .img{
+    background-image: url(../img/worldwide-main-instagram-03-ioniq5-220315.jpg);
+}
+article .media_box1 a .img_text,
+article .media_box2 a .img_text{
+    width:329px;
+    height:302px;
+    position:absolute;
+    top:20px;
+    left:20px;
+    background-color:rgba(0,44,95);
+    padding:40px;
+    display:none;
+}
+article .media_box1 a .img_text p,
+article .media_box2 a .img_text p{
+    color:white;
+    font-size:16px;
+    font-weight: 700;
+    line-height:1.8;
+}
+article .media_box1 a .img_text .icon,
+article .media_box2 a .img_text .icon{
+    width:25px;
+    height:25px;
+    background:url(../img/instagram.png) no-repeat;
+    background-size:contain;
+    position:absolute;
+    bottom:40px;
+    left:40px;
+}
+
+article .media_box2 a:nth-child(1) .img{
+    background-image:url(../img/worldwide-main-instagram-04-asmr-220315.jpg);
+}
+article .media_box2 a:nth-child(2) .img{
+    background-image: url(../img/worldwide-main-instagram-05-asmr-220315.jpg);
+}
+article .media_box2 a:nth-child(3) .img{
+    background-image: url(../img/worldwide-main-instagram-06-asmr-220315.jpg);
+}
+
+
+/***** footer *********/
+footer{
+    width:100%;
+    background-color:black;
+    padding:100px 150px;
+}
+footer .wrap{width:100%;}
+footer .wrap h3{margin-bottom:50px;}
+footer .wrap .footer_nav > li{
+    float:left;
+    width:150px;
+    margin-right:150px;
+    font-size:20px;
+    color:white;
+    font-weight: 700;
+}
+footer .wrap .footer_nav li .footer_sub li{
+    margin:25px 0;
+}
+footer .wrap .footer_nav li .footer_sub li a{
+    text-decoration: none;
+    color:white;
+    font-size:12px;
+    font-weight: 400;
+    display: block;
+}
+footer .wrap .footer_nav li:nth-child(2) .footer_sub li:nth-child(3) a::after,
+footer .wrap .footer_nav li:nth-child(3) .footer_sub li a::after{
+    content: "";
+    display:inline-block;
+    width:10px;
+    height:10px;
+    background:url(../img/ico_link.png) no-repeat 0 0;
+    margin-left:10px;
+}
+footer .wrap .right{
+    float:left;
+    width:319px;
+}
+footer .wrap .right>p{
+    font-size:20px;
+    color:white;
+    font-weight: 700;
+}
+footer .wrap .right .world{
+    width:100%;
+    height:80px;
+    margin-top:20px;
+}
+footer .wrap .right .world p,
+footer .wrap .right .life p{font-size:12px;color:white;margin-bottom:20px;}
+footer .wrap .right .world ul{width:100%;}
+footer .wrap .right .world ul li{
+    float:left;
+    width:25px;
+    height:25px;
+    margin-right:20px;
+}
+footer .wrap .right .world ul li a img,
+footer .wrap .right .life a img{object-fit: cover;width:25px;}
+
+footer .wrap>p{
+    color:white;
+    font-size:12px;
+    width:100%;
+    margin-top:340px;
+}

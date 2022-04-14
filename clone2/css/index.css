@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+.clear{
+    content: '';
+    display:block;
+    float: none;
+    clear: both;
+}
+
+#header{
+    width:100%;
+    height:60px;
+    box-shadow: 2px 0 4px black;
+    position:fixed;
+    background-color:white;
+    z-index: 999999;
+}
+#header .logo{
+    float:left;
+    width:150px;
+    height:40px;
+    margin:10px 30px;
+}
+#header .logo:hover{
+    cursor: pointer;
+    background-color:gray;
+}
+#header .logo h1{
+    font-size:18px;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+#header .logo h1 span{
+    font-weight: bold;
+}
+#header .nav{
+    float:right;
+    width:324px;
+    height:40px;
+    margin:10px 30px;
+}
+#header .nav a{
+    display:block;
+    float:left;
+    font-size:18px;
+    color:black;
+    text-decoration: none;
+    width:100px;
+    height:100%;
+    text-align: center;
+    line-height:40px;
+    padding:0 4px;
+    letter-spacing: 3px;
+}
+#header .nav a:hover{
+    background-color:gray;
+}
+
+#visual{
+    width:1500px;
+    height:800px;
+    background:url(../img/architect.jpg) no-repeat;
+    background-size:contain;
+    margin:0 auto;
+    position:relative;
+}
+#visual .text{
+    width:400px;
+    height:80px;
+    position: absolute;
+    top:48%;
+    left:38%;
+    text-align: center;
+    color:white;
+}
+#visual .text h1{
+    font-size:40px;
+    letter-spacing: 3px;
+    line-height:60px;
+}
+#visual .text h1 span{
+    font-weight:bold;
+    background-color:rgba(0, 0, 0, 0.8);
+    margin-top:10px;
+    width:90px;
+    height:60px;
+    display:inline-block;
+}
+
+#content{
+    width:1500px;
+    margin:40px auto;
+}
+#content #project{}
+#content #project h3{
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+#content #project .projectBox{
+    width:1500px;
+    height:510px;
+    margin-bottom:40px;
+}
+#content #project .projectBox .box1{
+    width:1500px;
+}
+#content #project .projectBox .box1 .boxImg{
+    width:370px;
+    height:250px;
+    float:left;
+    background:url(../img/house5.jpg) no-repeat;
+    background-size:contain;
+    margin-right:5px;
+    margin-bottom:5px;
+    position:relative;
+}
+#content #project .projectBox .box1 .boxImg:nth-child(2){
+    background-image: url(../img/house2.jpg);
+}
+#content #project .projectBox .box1 .boxImg:nth-child(3){
+    background-image: url(../img/house3.jpg);
+}
+#content #project .projectBox .box1 .boxImg:nth-child(4){
+    background-image: url(../img/house4.jpg);
+}
+
+#content #project .projectBox .box1 .boxImg p{
+    position:absolute;
+    left:0;
+    top:0;
+    width:130px;
+    height:35px;
+    text-align: center;
+    line-height:35px;
+    color:white;
+    background-color:black;
+}
+
+
+#content #project .projectBox .box2{
+    width:1500px;
+}
+#content #project .projectBox .box2 .boxImg{
+    width:370px;
+    height:250px;
+    float:left;
+    background:url(../img/house2.jpg) no-repeat;
+    background-size:contain;
+    margin-right:5px;
+    margin-bottom:5px;
+    position:relative;
+}
+#content #project .projectBox .box2 .boxImg:nth-child(2){
+    background-image: url(../img/house5.jpg);
+}
+#content #project .projectBox .box2 .boxImg:nth-child(3){
+    background-image: url(../img/house4.jpg);
+}
+#content #project .projectBox .box2 .boxImg:nth-child(4){
+    background-image: url(../img/house3.jpg);
+}
+
+#content #project .projectBox .box2 .boxImg p{
+    position:absolute;
+    left:0;
+    top:0;
+    width:130px;
+    height:35px;
+    text-align: center;
+    line-height:35px;
+    color:white;
+    background-color:black;
+}
+
+
+#content #about{}
+#content #about h3{
+    margin-bottom:30px;
+    font-size:25px;
+    font-weight:bold;
+}
+#content #about p{
+    line-height:1.2;
+    margin-bottom:30px;
+}
+#content #about .aboutBox{
+    width:1500px;
+    height:453px;
+    margin-bottom:40px;
+}
+
+#content #about .aboutBox .box1,
+#content #about .aboutBox .box2,
+#content #about .aboutBox .box3,
+#content #about .aboutBox .box4{
+    width:370px;
+    float:left;
+    margin-right:5px;
+}
+#content #about .aboutBox .box1 img,
+#content #about .aboutBox .box2 img,
+#content #about .aboutBox .box3 img,
+#content #about .aboutBox .box4 img{
+    width:370px;
+    height:250px;
+}
+#content #about .aboutBox .box1 h4,
+#content #about .aboutBox .box2 h4,
+#content #about .aboutBox .box3 h4,
+#content #about .aboutBox .box4 h4{
+    font-size:18px;
+    font-weight:bold;
+    padding:10px 0;
+}
+#content #about .aboutBox .box1 span,
+#content #about .aboutBox .box2 span,
+#content #about .aboutBox .box3 span,
+#content #about .aboutBox .box4 span{
+    color:gray;
+}
+#content #about .aboutBox .box1 p,
+#content #about .aboutBox .box2 p,
+#content #about .aboutBox .box3 p,
+#content #about .aboutBox .box4 p{
+    padding:10px 0;
+    width:350px;
+}
+#content #about .aboutBox .box1 button,
+#content #about .aboutBox .box2 button,
+#content #about .aboutBox .box3 button,
+#content #about .aboutBox .box4 button{
+    width:370px;
+    height:40px;
+    border: none;
+    font-size:15px;
+}
+#content #about .aboutBox .box1 button:hover,
+#content #about .aboutBox .box2 button:hover,
+#content #about .aboutBox .box3 button:hover,
+#content #about .aboutBox .box4 button:hover{
+    background-color:rgb(168, 168, 168);
+    cursor: pointer;
+}
+
+
+#content #contact h3{
+    margin-bottom:30px;
+    font-size:25px;
+    font-weight:bold;
+}
+#content #contact p{
+    margin-bottom:30px;
+}
+#content #contact input{
+    display:block;
+    width:1500px;
+    height:30px;
+    margin-bottom:10px;
+}
+#content #contact button{
+    margin:30px 0 50px 0;
+    width:150px;
+    height:40px;
+    background-color:black;
+    color:white;
+    border:none;
+}
+#content #contact button:hover{
+    background-color:gray;
+    cursor: pointer;
+}
+#content #contact .map{
+    background:url(../img/map.jpg)no-repeat;
+    width:1400px;
+    height:838px;
+    margin:0 auto;
+}
+
+
+#footer{
+    width:1500px;
+    height:100px;
+    background-color:black;
+}
+#footer p{
+    color:white;
+    text-align: center;
+    line-height:100px;
+}
+#footer p a{
+    display:inline-block;
+    color:white;
+}
