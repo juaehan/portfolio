@@ -340,35 +340,8 @@
         </footer>
     </div>
 
-   <script>
-       document.querySelector('#company').addEventListener('mouseover', (e) =>{
-           const comSub = document.querySelector('#comSub');
-           comSub.style.display='block';
-       });
-       document.querySelector('#close').addEventListener('click', (e) => {
-           e.preventDefault();
-           comSub.style.display='none';
-       });
-
-       document.querySelector('#language').addEventListener('click', e =>{
-           const lanSub = document.querySelector('.right_sub');
-           console.log(lanSub);
-           if(lanSub.style.display == 'block'){
-               lanSub.style.display = 'none';
-           }else{
-                lanSub.style.display = 'block';
-           }
-       });
-
-       
-       document.querySelectorAll('#img_text').forEach((v, i) => {
-           v.addEventListener('mouseover', e => {
-                const text = document.querySelector('.img_text');
-                text.style.display = 'block';
-           });
-       })
-       
-   </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+   <script src="./assets/js/index.js"></script>
 
 
    <!-- 공지사항 알림 -->

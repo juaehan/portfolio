@@ -59,6 +59,7 @@ header {
         top:23px;
         right:255px;
         font-weight: 300;
+        -webkit-transition: right .5s;
 
         ul li{
             float:left;
@@ -323,11 +324,23 @@ main{
                 margin-top:20px;
                 margin-left:200px;
             }
-            a img{
+            // a img{
+            //     position:absolute;
+            //     right:240px;
+            //     top:12px;
+            // }
+            a{
+                display:block;
+                width:36px;
+                height:36px;
                 position:absolute;
                 right:240px;
                 top:12px;
+                background: url(../img/btn-prom-down.png) no-repeat;
+
+                &.moreUp{background: url(../img/btn-prom-up.png) no-repeat;}
             }
+            
         } // notice_right
     } // notice_wrap
 

@@ -55,10 +55,12 @@ setInterval(function(){
 
 
 
-/** 슬라이드 더보기 */
+/** 프로모션 더보기 */
 const more = document.querySelector('#more');
 more.addEventListener('click', e => {
     e.preventDefault();
     const hiddenWrap = document.querySelector('.notice_hidden_wrap');
     hiddenWrap.classList.toggle('open');
+    
+    more.classList.toggle('moreUp');
 });
