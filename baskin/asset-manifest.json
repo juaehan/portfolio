@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/baskin/static/css/main.d559412c.css",
-    "main.js": "/portfolio/baskin/static/js/main.d0607f26.js",
+    "main.js": "/portfolio/baskin/static/js/main.3aac616e.js",
     "index.html": "/portfolio/baskin/index.html",
     "main.d559412c.css.map": "/portfolio/baskin/static/css/main.d559412c.css.map",
-    "main.d0607f26.js.map": "/portfolio/baskin/static/js/main.d0607f26.js.map"
+    "main.3aac616e.js.map": "/portfolio/baskin/static/js/main.3aac616e.js.map"
   },
   "entrypoints": [
     "static/css/main.d559412c.css",
-    "static/js/main.d0607f26.js"
+    "static/js/main.3aac616e.js"
   ]
 }
