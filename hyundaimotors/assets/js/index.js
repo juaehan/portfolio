@@ -20,9 +20,13 @@ document.querySelector('#language').addEventListener('click', e =>{
 
 document.querySelectorAll('#img_text').forEach((v, i) => {
     v.addEventListener('mouseover', e => {
-         const text = document.querySelector('.img_text');
+         const text = e.currentTarget.querySelector('.img_text');
          text.style.display = 'block';
     });
+    v.addEventListener('mouseout', e => {
+        const text = e.currentTarget.querySelector('.img_text');
+        text.style.display = 'none';
+    })
 });
 
 
