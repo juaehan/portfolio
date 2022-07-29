@@ -48,7 +48,7 @@ header{
                             transition: .8s;
                         }
                         &:hover::before{
-                            width: 6.5%;
+                            width: 7%;
                             -webkit-text-stroke: 1px #0d47a1;
                         }
                     }
@@ -183,6 +183,59 @@ main{
     }/** skills*/
     .portfolio{
         padding: 80px 150px;
+        .card{
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background: #000;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+            display: flex;
+            overflow: hidden;
+            transition: 0.5s ease-in-out;
+            &:hover{
+                width: 800px;
+            }
+            &:hover .details{
+                left: 400px;
+            }
+            .imgBx{
+                position:relative;
+                min-width: 400px;
+                height: 100%;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;
+                &>img{
+                    width:295px;
+                    height: 234px;
+                }
+            }
+            .details{
+                position:absolute;
+                left: 0;
+                min-width: 400px;
+                height:100%;
+                background:#1976d2;
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+                flex-direction: column;
+                z-index: 1;
+                transition: 0.5s ease-in-out;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 0;
+                    height: 0;
+                    border-top: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    border-left: 10px solid #fff;
+                }
+            }
+        }
     }
     .contack{
         padding: 80px 150px;
