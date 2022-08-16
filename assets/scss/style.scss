@@ -182,116 +182,132 @@ main{
         }
     }/** skills*/
     .portfolio{
-        padding: 80px 150px;
-        height: 3000px;
+        padding: 80px 200px;
         .cardContainer{
-            margin-bottom: 20px;
+            margin-bottom: 70px;
             display: block;
             .card{
-            position: relative;
-            width: 400px;
-            height: 400px;
-            background: #000;
-            box-shadow: 0 15px 45px rgba(0,0,0,0.1);
-            display: flex;
-            overflow: hidden;
-            transition: 0.5s ease-in-out;
-            &:hover{
-                width: 800px;
-            }
-            &:hover .details{
-                left: 400px;
-            }
-            .imgBx{
-                position:relative;
-                min-width: 400px;
-                height: 100%;
-                background: #fff;
+                position: relative;
+                width: 400px;
+                height: 400px;
+                background: #000;
+                box-shadow: 0 15px 45px rgba(0,0,0,0.1);
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 2;
-                &>img{
-                    width:295px;
-                    height: 234px;
-                }
-            }
-            .details{
-                position:absolute;
-                left: 0;
-                min-width: 400px;
-                height:100%;
-                background:#0d47a1;
-                display: flex;
-                justify-content: center;
-                padding: 30px;
-                flex-direction: column;
-                z-index: 1;
+                overflow: hidden;
                 transition: 0.5s ease-in-out;
-                color:#fff;
-                &::before{
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    width: 0;
-                    height: 0;
-                    border-top: 10px solid transparent;
-                    border-bottom: 10px solid transparent;
-                    border-left: 10px solid #fff;
+                &:hover{
+                    width: 800px;
                 }
-
-                &>h4{
-                    font-size: 25px;
-                    font-family: 'Noto Sans KR', sans-serif;
-                    font-weight: 700;
-                    margin-bottom: 20px;
+                &:hover .details{
+                    left: 400px;
                 }
-                &>p{
-                    font-family: 'Noto Serif KR', sans-serif;
-                    font-weight: 400;
-                    width: 340px;
-                    line-height: 1.5;
-                    font-size: 18px;
-                    margin-bottom: 10px;
-                }
-                .useSkill{
-                    width: 340px;
-                    height: 50px;
+                .imgBx{
+                    position:relative;
+                    min-width: 400px;
+                    height: 100%;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 2;
                     &>img{
-                        width: 100px;
-                        height: 100%;
+                        width:295px;
+                        height: 234px;
                     }
                 }
-                .box{
-                    margin-top: 30px;
-                    text-align: center;
-                    &>a{
-                        display: inline-block;
+                .details{
+                    position:absolute;
+                    left: 0;
+                    min-width: 400px;
+                    height:100%;
+                    background:#0d47a1;
+                    display: flex;
+                    justify-content: center;
+                    padding: 30px;
+                    flex-direction: column;
+                    z-index: 1;
+                    transition: 0.5s ease-in-out;
+                    color:#fff;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        border-top: 10px solid transparent;
+                        border-bottom: 10px solid transparent;
+                        border-left: 10px solid #fff;
+                    }
+
+                    &>h4{
+                        font-size: 25px;
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                    }
+                    &>p{
                         font-family: 'Noto Serif KR', sans-serif;
-                        font-weight: 500;
-                        font-size: 15px;
-                        color: #000;
-                        width: 80px;
-                        height: 30px;
-                        background: #fff;
-                        line-height: 30px;
-                        border-radius: 5px;
+                        font-weight: 400;
+                        width: 340px;
+                        line-height: 1.5;
+                        font-size: 18px;
+                        margin-bottom: 10px;
                     }
-                    &>a:first-child{
-                        margin-right: 10px;
+                    .useSkill{
+                        width: 340px;
+                        height: 50px;
+                        &>img{
+                            width: 150px;
+                            height: 100%;
+                        }
                     }
-                    &>a:hover{
-                        text-decoration: underline;
+                    .box{
+                        margin-top: 30px;
+                        text-align: center;
+                        &>a{
+                            display: inline-block;
+                            font-family: 'Noto Serif KR', sans-serif;
+                            font-weight: 500;
+                            font-size: 15px;
+                            color: #000;
+                            width: 80px;
+                            height: 30px;
+                            background: #fff;
+                            line-height: 30px;
+                            border-radius: 5px;
+                        }
+                        &>a:first-child{
+                            margin-right: 10px;
+                        }
+                        &>a:hover{
+                            text-decoration: underline;
+                        }
                     }
                 }
-            }
             }
             
+
+            
         }
-        .right{
-            position:absolute;
-            right:150px;
-            &>.card{background:yellow;}
+        #right{
+            display: flex;
+            flex-direction: row-reverse;
+            .card{
+                flex-direction: row-reverse;
+                &:hover .details{
+                    right: 400px;
+                }
+                .details{
+                    right: 0;
+                    left: unset;
+                    &::before{
+                        right: 0;
+                        left: unset;
+                        border-right: 10px solid #fff;
+                        border-left: none;
+                    }
+                }
+            }
         }
         
     }
@@ -303,6 +319,7 @@ footer{
     background: #3586ff;
     min-height: 300px;
     padding: 50px 50px;
+    margin-top: 200px;
 
     .wave{
         position: absolute;
@@ -375,4 +392,10 @@ footer{
             }
         }
     }
+}
+
+.clear{
+    content: '';
+    position: none;
+    clear: both;
 }
